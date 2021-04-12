@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GigBusiness", "GigBusiness\GigBusiness.csproj", "{C495FB48-B032-493A-B984-A7A4BEE55FC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GigBusiness.Contract", "GigBusiness.Contract\GigBusiness.Contract.csproj", "{7EC4E26B-17F6-4FA1-A56D-7DF62A22F40E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GigBusiness.Models", "GigBusiness.Models\GigBusiness.Models.csproj", "{04908A57-38C8-43BA-BF04-0131E88B5446}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GigView", "GigView\GigView.csproj", "{96E2FA33-8DDB-449D-8884-71D8D00ACC0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C495FB48-B032-493A-B984-A7A4BEE55FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C495FB48-B032-493A-B984-A7A4BEE55FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C495FB48-B032-493A-B984-A7A4BEE55FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C495FB48-B032-493A-B984-A7A4BEE55FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EC4E26B-17F6-4FA1-A56D-7DF62A22F40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC4E26B-17F6-4FA1-A56D-7DF62A22F40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC4E26B-17F6-4FA1-A56D-7DF62A22F40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC4E26B-17F6-4FA1-A56D-7DF62A22F40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04908A57-38C8-43BA-BF04-0131E88B5446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04908A57-38C8-43BA-BF04-0131E88B5446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04908A57-38C8-43BA-BF04-0131E88B5446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04908A57-38C8-43BA-BF04-0131E88B5446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E2FA33-8DDB-449D-8884-71D8D00ACC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E2FA33-8DDB-449D-8884-71D8D00ACC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E2FA33-8DDB-449D-8884-71D8D00ACC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E2FA33-8DDB-449D-8884-71D8D00ACC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A06F268-F73D-463D-AEB9-825370AAE042}
+	EndGlobalSection
+EndGlobal

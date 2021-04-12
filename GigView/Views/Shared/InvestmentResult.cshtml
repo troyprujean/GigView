@@ -1,0 +1,9 @@
+﻿@model GigBusiness.Models.CryptoCompare.Investment
+
+@{
+    var textColourClass = Model.Profitable ? "text-success" : "text-danger";
+}
+
+<h1>@Model.Symbol</h1>
+<h2 class="@textColourClass">Current $@Model.CurrentPrice</h2>
+<h2 class="@textColourClass">Profit: $@Model.Profit</h2>

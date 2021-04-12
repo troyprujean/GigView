@@ -1,0 +1,9 @@
+﻿@model IndexViewModel
+
+<div class="text-center">
+    @foreach(var investment in Model.Investments)
+    {
+        @await Html.PartialAsync("InvestmentResult", investment)
+        <br/>
+    }
+</div>
