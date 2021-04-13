@@ -1,4 +1,6 @@
-﻿namespace GigBusiness.Models.CryptoCompare
+﻿using System;
+
+namespace GigBusiness.Models.CryptoCompare
 {
     public class Investment
     {
@@ -9,6 +11,6 @@
 
         public double CurrentValue => CurrentPrice * Count;
         public bool Profitable => CurrentValue > InvestmentAmount;
-        public double Profit => CurrentValue - InvestmentAmount;
+        public double Profit => Math.Round(CurrentValue - InvestmentAmount, 5);
     }
 }

@@ -1,9 +1,38 @@
 ﻿@model IndexViewModel
 
-<div class="text-center">
-    @foreach(var investment in Model.Investments)
+@{
+    var textColourClass = Model.Profitable ? "text-success" : "text-danger";
+}
+
+    <div class="text-center">
+        <h1>Gig View</h1>
+        <br />
+        <h4>Investment: $@Model.TotalInvestment</h4>
+        <h4 class="@textColourClass">Value: $@Model.TotalValue</h4>
+        <h4 class="@textColourClass">Profit: $@Model.TotalProfit</h4>
+        <br />
+    </div>
+
+<div class="container">
+    <div class="row bg-dark text-white">
+        <div class="col border">
+            <h4>Symbol</h4>
+        </div>
+        <div class="col border">
+            <h4>Price</h4>
+        </div>
+        <div class="col border">
+            <h4>Coins</h4>
+        </div>
+        <div class="col border">
+            <h4>Value</h4>
+        </div>
+        <div class="col border">
+            <h4>Profit</h4>
+        </div>
+    </div>
+    @foreach (var investment in Model.Investments)
     {
         @await Html.PartialAsync("InvestmentResult", investment)
-        <br/>
     }
 </div>

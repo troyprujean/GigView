@@ -1,4 +1,3 @@
-using GigBusiness.Contract;
 using GigBusiness.Models.CryptoCompare;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

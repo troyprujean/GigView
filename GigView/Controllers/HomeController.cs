@@ -1,5 +1,5 @@
 ﻿using System;
-using GigBusiness;
+using GigBusiness.Contract;
 using GigBusiness.Models.CryptoCompare;
 using GigView.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -10,10 +10,12 @@ namespace GigView.Controllers
     public class HomeController : Controller
     {
         private readonly IOptions<CryptoCompareSettings> _settings;
+        private readonly ICryptoCompare _cryptoCompare;
 
-        public HomeController(IOptions<CryptoCompareSettings> settings)
+        public HomeController(IOptions<CryptoCompareSettings> settings, ICryptoCompare cryptoCompare)
         {
             _settings = settings;
+            _cryptoCompare = cryptoCompare;
         }
 
         [HttpGet]
@@ -21,7 +23,7 @@ namespace GigView.Controllers
         {
             try
             {
-                var results = new CryptoCompare().GetInvestments(_settings.Value);
+                var results = _cryptoCompare.GetInvestments(_settings.Value);
 
                 return View(new IndexViewModel(results));
             }
